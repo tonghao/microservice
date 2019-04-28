@@ -1,0 +1,55 @@
+server:
+  port: 8000
+
+##MySQl
+#spring:
+#  jpa:
+#    generate-ddl: false
+#    show-sql: true
+#    hibernate:
+#      ddl-auto: none
+#  datasource:
+#    platform: mysql
+#    schema: classpath:schema.sql
+#    data: classpath:data.sql
+#    initialization-mode: always
+#    url: jdbc:mysql://localhost:3306/jdbc?serverTimezone=UTC
+#    username: root
+#    password:
+
+  #h2
+spring:
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  datasource:
+    platform: h2
+    schema: classpath:schema.sql
+    data: classpath:data.sql
+  h2:
+    console:
+      settings:
+        web-all-others: true
+      console:
+        path: ==
+        enabled: true
+
+
+
+
+log:
+  level:
+    root: info
+    org.hibernate: info
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    org.hibernate.type.descriptor.sql.BasicExtractor: TRACE
+
+info:
+  app:
+    name: @project.artifactId@
+    encode: @project.build.sourceEncoding@
+    java:
+      source: @java.version@
+      target: @java.version@
