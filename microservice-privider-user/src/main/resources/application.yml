@@ -1,0 +1,57 @@
+server:
+  port: 8000
+
+##MySQl
+#spring:
+#  jpa:
+#    generate-ddl: false
+#    show-sql: true
+#    hibernate:
+#      ddl-auto: none
+#  datasource:
+#    platform: mysql
+#    schema: classpath:schema.sql
+#    data: classpath:data.sql
+#    initialization-mode: always
+#    url: jdbc:mysql://localhost:3306/jdbc?serverTimezone=UTC
+#    username: root
+#    password:
+
+  #h2
+spring:
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  datasource:
+    platform: h2
+    schema: classpath:schema.sql
+    data: classpath:data.sql
+
+  application:
+    name: microservice-privider-user
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+  instance:
+    prefer-ip-address: true
+
+log:
+  level:
+    root: info
+    org.hibernate: info
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    org.hibernate.type.descriptor.sql.BasicExtractor: TRACE
+    nsu.cloud: debug
+
+#info:
+#  app:
+#    name: @project.artifactId@
+#    encode: @project.build.sourceEncoding@
+#    java:
+#      source: @java.version@
+#      target: @java.version@
