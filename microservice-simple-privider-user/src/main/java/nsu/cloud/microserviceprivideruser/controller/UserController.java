@@ -1,7 +1,7 @@
-package nsu.cloud.microservicesimpleprivideruser.controller;
+package nsu.cloud.microserviceprivideruser.controller;
 
-import nsu.cloud.microservicesimpleprivideruser.Dao.UserRespository;
-import nsu.cloud.microservicesimpleprivideruser.entity.User;
+import nsu.cloud.microserviceprivideruser.Dao.UserRespository;
+import nsu.cloud.microserviceprivideruser.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

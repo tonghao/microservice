@@ -1,4 +1,4 @@
-package nsu.cloud.microservicesimpleprivideruser.entity;
+package nsu.cloud.microserviceprivideruser.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

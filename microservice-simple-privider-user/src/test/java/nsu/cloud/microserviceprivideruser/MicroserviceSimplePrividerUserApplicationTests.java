@@ -1,4 +1,4 @@
-package nsu.cloud.microservicesimpleprivideruser;
+package nsu.cloud.microserviceprivideruser;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

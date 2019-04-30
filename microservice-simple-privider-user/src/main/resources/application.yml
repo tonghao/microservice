@@ -18,24 +18,24 @@ server:
 #    password:
 
   #h2
-spring:
-  jpa:
-    generate-ddl: false
-    show-sql: true
-    hibernate:
-      ddl-auto: none
-  datasource:
-    platform: h2
-    schema: classpath:schema.sql
-    data: classpath:data.sql
-  h2:
-    console:
-      settings:
-        web-all-others: true
-      console:
-        path: ==
-        enabled: true
-
+#spring:
+#  jpa:
+#    generate-ddl: false
+#    show-sql: true
+#    hibernate:
+#      ddl-auto: none
+#  datasource:
+#    platform: h2
+#    schema: classpath:schema.sql
+#    data: classpath:data.sql
+#  h2:
+#    console:
+#      settings:
+#        web-all-others: true
+#      console:
+#        path: ==
+#        enabled: true
+#
 
 
 
